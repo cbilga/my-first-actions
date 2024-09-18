@@ -5,5 +5,8 @@ on: push
 jobs:
     TestGithubActions:
         runs-on: ubuntu-latest
+        env:
+            MY_VARIABLE: "This is a variable"
         steps:
             - run: echo "Hello Github Actions!"
+            - run: echo ${{env.MY_VARIABLE}}
