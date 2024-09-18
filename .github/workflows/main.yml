@@ -11,3 +11,5 @@ jobs:
             - run: echo "Hello Github Actions!"
             - run: echo ${{env.MY_VARIABLE}}
             - run: echo ${{secrets.MY_SECRET}}
+            - run: echo "Hello worlds!" > hello.txt
+            - run: cat hello.txt
