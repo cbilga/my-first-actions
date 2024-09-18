@@ -3,4 +3,7 @@ name: Test Workflow
 on: push
     
 jobs:
-    - run: echo "Hello Github Actions!"
+    TestGithubActions:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hello Github Actions!"
