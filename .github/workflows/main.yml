@@ -1,0 +1,4 @@
+name: Test Workflow
+
+on: push
+    run: echo "Hello Github Actions!"
